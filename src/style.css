@@ -1,0 +1,68 @@
+html, body, .app-container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primaryBackground: #011627;
+    --secondaryAccent: purple;
+    --secondaryBackground: hsl(202, 70%, 85%);
+    --secondaryFocusBackground: hsl(202, 65%, 75%);
+    --secondaryText: hsl(0, 0%, 20%);
+    --tertiaryBackground: #F2F5EA;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: var(--secondaryBackground);
+    border: 1px solid var(--secondaryAccent);
+    border-radius: 4px;
+    color: var(--primaryText);
+    margin: 8px;
+    padding: 4px 8px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:focus {
+    background-color: var(--secondaryFocusBackground);
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+}
+
+.controls-container {
+    align-items: center;
+    background-color: var(--primaryBackground);
+    display: flex;
+    height: 50px;
+}
+
+.input-area {
+    background-color: var(--tertiaryBackground);
+    border: none;
+    border-right: 1px solid var(--secondaryAccent);
+    flex: 1;
+    padding: 8px;
+    resize: none;
+}
+
+.input-area:focus{
+    outline: none;
+}
+
+.output-area {
+    flex: 1;
+    font-family: sans-serif;
+    overflow: auto;
+    padding: 0px 8px;
+}
